@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.local
+*.env
+
+# Database — local SQLite store (regeneratable)
+store/events.sqlite
+store/events.sqlite-journal
+store/events.sqlite-shm
+store/events.sqlite-wal
+
+# Generated reports
+reports/out/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo

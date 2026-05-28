@@ -1,0 +1,5 @@
+{
+  "https://xtech.army.mil/competition/xtech-hackathon/": "tests/fixtures/xtech_official.html",
+  "https://maggiegray.us/p/2026-national-security-hackathon": "tests/fixtures/maggiegray_substack.html",
+  "https://defensescoop.com/2026/05/04/xtech-natsec-hackathon-winners-illustrative/": "tests/fixtures/defensescoop_recap.html"
+}

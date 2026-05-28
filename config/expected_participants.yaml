@@ -1,0 +1,32 @@
+# Manual overrides for `expected_participants` on events.
+#
+# Adapters set this automatically when the source publishes a
+# confirmed total (e.g., xTech competition pages name finalist
+# counts, DIU posts "Four Companies Selected ..."). When the source
+# doesn't publish a number, an analyst can add it here.
+#
+# The report layers this on top of the DB at render time, so you
+# can edit this file and re-run `python -m reports.build_pdf`
+# without touching the adapters.
+#
+# Format:
+#   events:
+#     <event_id>:
+#       expected_participants: <integer>
+#       source: <free-text justification — where the number came from>
+#       # `notes` is optional and ignored by the loader; for analyst memory only
+#
+# To find event_ids:
+#   python -c "from store import cache; \
+#              import sqlite3; \
+#              c=sqlite3.connect(cache.DB_PATH); \
+#              c.row_factory=sqlite3.Row; \
+#              [print(r['id'], r['name']) for r in c.execute('SELECT id, name FROM events')]"
+
+events:
+
+  # Example — replace with real event_id once xTech run populates
+  # the store. Number is illustrative.
+  xtech_natsec_hackathon_2026:
+    expected_participants: 400
+    source: "xTech competition page: 'Over 400 teams applied; 11 selected as finalists.'"

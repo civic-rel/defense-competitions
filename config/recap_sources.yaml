@@ -1,0 +1,54 @@
+# Editorial recap sources to scan for each tracked event.
+#
+# The recap_scraper queries each source for articles that mention
+# the event by name (and aliases) within a window around the event
+# date. NER then extracts company names from the article body.
+
+editorial_sources:
+  # Primary defense trade press
+  - name: defensescoop
+    base_url: https://defensescoop.com
+    query_template: "{event_name} site:defensescoop.com"
+    weight: 1.0
+    confidence_floor: highly_likely
+
+  - name: breakingdefense
+    base_url: https://breakingdefense.com
+    query_template: "{event_name} site:breakingdefense.com"
+    weight: 1.0
+    confidence_floor: highly_likely
+
+  - name: insidedefense
+    base_url: https://insidedefense.com
+    query_template: "{event_name} site:insidedefense.com"
+    weight: 1.0
+    confidence_floor: highly_likely
+
+  # Innovation-ecosystem coverage
+  - name: cerebralvalley
+    base_url: https://cerebralvalley.ai
+    query_template: "{event_name} site:cerebralvalley.ai"
+    weight: 0.9
+    confidence_floor: highly_likely
+
+  # First-person event organizer posts (substack/medium) — typically
+  # high-quality named lists of sponsors and partners.
+  - name: substack_organizer
+    base_url: ""
+    query_template: '"{event_name}" (site:substack.com OR site:medium.com)'
+    weight: 0.8
+    confidence_floor: highly_likely
+
+  # Program's own official site — confirmed-tier when matched
+  - name: program_official
+    base_url: ""
+    query_template: '"{event_name}" (site:xtech.army.mil OR site:diu.mil OR site:army.mil OR site:af.mil OR site:socom.mil)'
+    weight: 1.5
+    confidence_floor: confirmed
+
+# Article query window in days, relative to the event end date.
+# window_before catches pre-event announcements (sponsor lists,
+# partner declarations) — typically 3-4 weeks ahead.
+# window_after catches post-event recaps (winners, demos).
+window_before_days: 30
+window_after_days: 21

@@ -1,0 +1,86 @@
+# Gazetteer of defense-tech and dual-use companies the recap NER
+# should recognize by name.
+#
+# Format: one entry per line.
+#   <canonical name>[|alias1|alias2|...]
+#
+# Rules:
+# - Include defense-tech companies that compete as PARTICIPANTS.
+# - Do NOT use this list for sponsor/investor watchlisting — it's
+#   only used to recognize names in unstructured text. Role
+#   (participant vs. sponsor vs. judge) is determined by the
+#   surrounding context in the extraction step.
+# - Add aliases for any name variant the company is referred to by.
+# - Lines starting with # are comments.
+# - Re-sort alphabetically on each edit.
+
+# --- Autonomy / drones ---
+AeroVironment
+Anduril Industries|Anduril
+EpiSci
+Kratos Defense|Kratos
+Performance Drone Works|PDW
+Red Cat Holdings|Red Cat
+Saronic Technologies|Saronic
+Shield AI
+Skydio
+Teal Drones|Teal
+
+# --- AI / data ---
+Cohere
+Databricks
+HiddenLayer
+Palantir Technologies|Palantir
+Primer|Primer.ai
+Rebellion Defense|Rebellion
+Scale AI|Scale
+Vannevar Labs|Vannevar
+
+# --- Cyber ---
+Chainguard
+Dragos
+Two Six Technologies|Two Six
+Wiz
+
+# --- Space / ISR ---
+BlackSky
+HawkEye 360
+Maxar Technologies|Maxar
+Planet Labs|Planet
+True Anomaly
+
+# --- Communications / networking ---
+Anduril Cosmos
+Capella Space|Capella
+Slingshot Aerospace|Slingshot
+
+# --- Manufacturing / hardware ---
+Hadrian Automation|Hadrian
+Hermeus
+Mach Industries|Mach
+Radius Industries|Radius
+
+# --- Primes (recognized when mentioned, not watchlisted) ---
+Boeing
+General Dynamics
+L3Harris Technologies|L3Harris
+Lockheed Martin
+Northrop Grumman
+RTX Corporation|RTX|Raytheon
+
+# --- Integrators / services ---
+Booz Allen Hamilton|Booz Allen
+CACI International|CACI
+Deloitte
+Leidos
+SAIC
+
+# --- Recently-public hackathon participants (seeded from prior events) ---
+Armada AI|Armada
+TENEX
+
+# NOTE: Skyrun was reclassified as a co-host of xTech National
+# Security Hackathon (not a participant). It is intentionally NOT in
+# this gazetteer; if it gets re-extracted by NER, the report's
+# KNOWN_HOSTS_SPONSORS filter (reports/build_markdown.py) will drop
+# it from the participant list.

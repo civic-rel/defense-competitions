@@ -1,0 +1,79 @@
+{
+  "_comment": "GitHub fixture for sources/github.py. Repos surfaced by the user for the xTech National Security Hackathon; queries below mirror the ones in config/github_events.yaml. Add more entries as more events / submissions are discovered.",
+  "queries": {
+    "xtech natsec hackathon": [
+      "Kingkali69/Army_Xtech",
+      "jeremyloseycesi/K9-Sentinel",
+      "sachin-crispai/xtech-natsec-cv",
+      "PoggyBobby/EMCON-Sentinel"
+    ],
+    "army hackathon": [
+      "Kingkali69/Army_Xtech"
+    ],
+    "topic:xtech-hackathon": [
+      "sachin-crispai/xtech-natsec-cv"
+    ]
+  },
+  "repos": {
+    "Kingkali69/Army_Xtech": {
+      "full_name": "Kingkali69/Army_Xtech",
+      "owner": "Kingkali69",
+      "name": "Army_Xtech",
+      "description": "xTech National Security Hackathon submission — Army challenge problem.",
+      "url": "https://github.com/Kingkali69/Army_Xtech",
+      "topics": ["xtech", "army-hackathon"],
+      "owner_type": "User",
+      "owner_company": null,
+      "owner_blog": null,
+      "owner_html_url": "https://github.com/Kingkali69",
+      "repo_homepage": null,
+      "created_at": "2026-05-24",
+      "pushed_at": "2026-05-26"
+    },
+    "jeremyloseycesi/K9-Sentinel": {
+      "full_name": "jeremyloseycesi/K9-Sentinel",
+      "owner": "jeremyloseycesi",
+      "name": "K9-Sentinel",
+      "description": "K9 Sentinel — autonomous canine-companion ISR concept for xTech National Security Hackathon.",
+      "url": "https://github.com/jeremyloseycesi/K9-Sentinel",
+      "topics": ["natsec-hackathon"],
+      "owner_type": "User",
+      "owner_company": "CESI",
+      "owner_blog": null,
+      "owner_html_url": "https://github.com/jeremyloseycesi",
+      "repo_homepage": null,
+      "created_at": "2026-05-24",
+      "pushed_at": "2026-05-26"
+    },
+    "sachin-crispai/xtech-natsec-cv": {
+      "full_name": "sachin-crispai/xtech-natsec-cv",
+      "owner": "sachin-crispai",
+      "name": "xtech-natsec-cv",
+      "description": "Computer vision module for xTech NatSec hackathon — vehicle / drone detection.",
+      "url": "https://github.com/sachin-crispai/xtech-natsec-cv",
+      "topics": ["xtech-hackathon", "computer-vision"],
+      "owner_type": "User",
+      "owner_company": "CrispAI",
+      "owner_blog": "https://crisp-ai.com",
+      "owner_html_url": "https://github.com/sachin-crispai",
+      "repo_homepage": null,
+      "created_at": "2026-05-25",
+      "pushed_at": "2026-05-26"
+    },
+    "PoggyBobby/EMCON-Sentinel": {
+      "full_name": "PoggyBobby/EMCON-Sentinel",
+      "owner": "PoggyBobby",
+      "name": "EMCON-Sentinel",
+      "description": "EMCON Sentinel — emissions-control monitoring submission, xTech NatSec.",
+      "url": "https://github.com/PoggyBobby/EMCON-Sentinel",
+      "topics": ["natsec-hackathon", "emcon"],
+      "owner_type": "User",
+      "owner_company": null,
+      "owner_blog": null,
+      "owner_html_url": "https://github.com/PoggyBobby",
+      "repo_homepage": null,
+      "created_at": "2026-05-25",
+      "pushed_at": "2026-05-26"
+    }
+  }
+}

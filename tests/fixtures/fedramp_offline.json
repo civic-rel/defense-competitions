@@ -1,0 +1,29 @@
+[
+  {
+    "csp_name": "Palantir Technologies",
+    "product_name": "Palantir Federal Cloud Service",
+    "status": "Authorized",
+    "impact_level": "high",
+    "dod_il_level": "IL5",
+    "authorization_date": "2020-09-15",
+    "description": "Palantir Federal Cloud Service is a FedRAMP High and DoD Impact Level 5 authorized SaaS for government data integration and analytics."
+  },
+  {
+    "csp_name": "Scale AI",
+    "product_name": "Scale Government",
+    "status": "In Process",
+    "impact_level": "moderate",
+    "dod_il_level": "IL4",
+    "authorization_date": null,
+    "description": "Data labeling and ML evaluation platform pursuing FedRAMP Moderate and DoD IL4."
+  },
+  {
+    "csp_name": "Deloitte",
+    "product_name": "Deloitte GovConnect",
+    "status": "Authorized",
+    "impact_level": "moderate",
+    "dod_il_level": "IL2",
+    "authorization_date": "2019-04-22",
+    "description": "Deloitte GovConnect collaboration platform authorized at FedRAMP Moderate and DoD Impact Level 2."
+  }
+]

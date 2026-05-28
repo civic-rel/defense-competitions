@@ -1,0 +1,9 @@
+httpx>=0.27,<1.0
+selectolax>=0.3.21
+tenacity>=8.0
+python-dateutil>=2.8
+
+# Report rendering
+markdown>=3.4         # used by reports/build_pdf.py (md -> HTML conversion)
+reportlab>=4.0        # used by reports/build_pdf.py (HTML -> PDF rendering)
+openpyxl>=3.1         # used by reports/build_xlsx.py (multi-sheet xlsx export)
